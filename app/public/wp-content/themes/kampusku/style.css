@@ -1,0 +1,44 @@
+/*
+Theme Name: Kampusku
+Theme URI: https://pratamabayu.com/projects/kampusku
+Author: Pratama Bayu Widagdo
+Author URI: https://pratamabayu.com
+Description: This is theme for academic purpose
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: <https://www.gnu.org/licenses/gpl-2.0.html>
+Text Domain: kampusku
+Tags: university,college,campus,academic
+*/
+
+:root {
+    --primary-color: #874299;
+    --primary-dark-color: #7e3d8e;
+    --primary-light-color: #9047a4;
+    --secondary-color: #FED836;
+    --secondary-dark-color: #fed527;
+    --secondary-light-color: #fedb45;
+    --dark-color: #000;
+    --light-color: #fff;
+    --gray-color: #8c8c8c;
+    --gray-dark-color: #404040;
+    --gray-light-color: #bfbfbf;
+    --border-color: #a6a6a6;
+    --border-dark-color: #8c8c8c;
+    --border-light-color: #bababa;
+    --background-color: #ededed;
+    --background-dark-color: #e6e6e6;
+    --background-light-color: #fff;
+    --text-color: #0d0d0d;
+    --link-color: #874299;
+    --link-dark-color: #683375;
+    --link-light-color: #a357b7;
+    --code-color: #0d0d0d;
+    --highlight-color: #ffe9b3;
+    --success-color: #32b643;
+    --warning-color: #ffb700;
+    --error-color: #e85600;
+    --font-family: "Fira Sans", Verdana, sans-serif;
+
+    --navbar-item-padding: var(--padding-xsmall) var(--padding-xsmall);
+  }
