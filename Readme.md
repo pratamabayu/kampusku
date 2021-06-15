@@ -1,7 +1,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 # Graff
-Kampusku is an educational wordpress theme.
+Kampusku is an university wordpress theme.
 
 # Running locally
 Import the project repository in ```Local``` app. ```Local``` is the #1 local wordpress development tool, a fuss-free way to develop WordPress locally.
