@@ -6,7 +6,7 @@ require_once("inc/PrettyDateTimeUtility.php");
 function pb_add_theme_scripts()
 {
     wp_enqueue_style('font-family', 'https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
-    wp_enqueue_style('grafel', get_template_directory_uri() . '/assets/css/grafel.min.css');
+    wp_enqueue_style('grafel', get_template_directory_uri() . '/assets/css/grafel.css');
     wp_enqueue_style('gstatic', 'https://unpkg.com/css.gg/icons/all.css');
 
     wp_enqueue_style('style', get_stylesheet_uri());
