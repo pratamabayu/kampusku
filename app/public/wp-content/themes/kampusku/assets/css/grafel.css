@@ -585,6 +585,8 @@ template {
 * {
   font-family: var(--font-family);
   text-rendering: optimizeLegibility;
+
+  min-width: 0;
 }
 
 html {
@@ -7513,15 +7515,13 @@ ul.list.list-divider > li:last-child {
   --table-divider-border-bottom: var(--border-width-thin) solid var(--border-light-color);
 }
 
-table.table {
-  border-collapse: collapse;
+.table-scroll {
+  overflow: auto;
+  white-space: nowrap;
 }
 
-table.table.table-scroll {
-  display: block;
-  overflow-x: auto;
-  padding-bottom: 0.75rem;
-  white-space: nowrap;
+table.table {
+  border-collapse: collapse;
 }
 
 table.table > thead > tr > th,
