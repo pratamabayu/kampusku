@@ -76,6 +76,15 @@
                 'template-parts/section/section-latest-posts-as-card',
                 null,
                 array(
+                    'heading' => 'Publikasi terkini',
+                    'category_name' => 'publikasi',
+                    'numberposts' => 4
+                )
+            ); ?>
+            <?php get_template_part(
+                'template-parts/section/section-latest-posts-as-card',
+                null,
+                array(
                     'heading' => 'Pitutur terkini',
                     'category_name' => 'pitutur',
                     'numberposts' => 2
