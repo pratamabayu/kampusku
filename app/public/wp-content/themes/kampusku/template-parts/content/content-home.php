@@ -102,6 +102,13 @@
                 )
             ); ?>
             <?php get_template_part(
+                'template-parts/section/section-pinned-videos-as-aside',
+                null,
+                array(
+                    'heading' => 'Kanal video'
+                )
+            ); ?>
+            <?php get_template_part(
                 'template-parts/section/section-latest-posts-as-aside',
                 null,
                 array(

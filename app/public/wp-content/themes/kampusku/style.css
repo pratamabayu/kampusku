@@ -12,33 +12,51 @@ Tags: university,college,campus,academic
 */
 
 :root {
-    --primary-color: #874299;
-    --primary-dark-color: #7e3d8e;
-    --primary-light-color: #9047a4;
-    --secondary-color: #FED836;
-    --secondary-dark-color: #fed527;
-    --secondary-light-color: #fedb45;
-    --dark-color: #000;
-    --light-color: #fff;
-    --gray-color: #8c8c8c;
-    --gray-dark-color: #404040;
-    --gray-light-color: #bfbfbf;
-    --border-color: #a6a6a6;
-    --border-dark-color: #8c8c8c;
-    --border-light-color: #bababa;
-    --background-color: #ededed;
-    --background-dark-color: #e6e6e6;
-    --background-light-color: #fff;
-    --text-color: #0d0d0d;
-    --link-color: #874299;
-    --link-dark-color: #683375;
-    --link-light-color: #a357b7;
-    --code-color: #0d0d0d;
-    --highlight-color: #ffe9b3;
-    --success-color: #32b643;
-    --warning-color: #ffb700;
-    --error-color: #e85600;
-    --font-family: "Fira Sans", Verdana, sans-serif;
+  --primary-color: #874299;
+  --primary-dark-color: #7e3d8e;
+  --primary-light-color: #9047a4;
+  --secondary-color: #fed836;
+  --secondary-dark-color: #fed527;
+  --secondary-light-color: #fedb45;
+  --dark-color: #000;
+  --light-color: #fff;
+  --gray-color: #8c8c8c;
+  --gray-dark-color: #404040;
+  --gray-light-color: #bfbfbf;
+  --border-color: #a6a6a6;
+  --border-dark-color: #8c8c8c;
+  --border-light-color: #bababa;
+  --background-color: #ededed;
+  --background-dark-color: #e6e6e6;
+  --background-light-color: #fff;
+  --text-color: #0d0d0d;
+  --link-color: #874299;
+  --link-dark-color: #683375;
+  --link-light-color: #a357b7;
+  --code-color: #0d0d0d;
+  --highlight-color: #ffe9b3;
+  --success-color: #32b643;
+  --warning-color: #ffb700;
+  --error-color: #e85600;
+  --font-family: "Fira Sans", Verdana, sans-serif;
 
-    --navbar-item-padding: var(--padding-xsmall) var(--padding-xsmall);
-  }
+  --navbar-item-padding: var(--padding-xsmall) var(--padding-xsmall);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

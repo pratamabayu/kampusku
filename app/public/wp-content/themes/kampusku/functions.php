@@ -106,6 +106,29 @@ function pb_add_event_post_type()
 
 add_action('init', 'pb_add_event_post_type');
 
+function pb_add_video_post_type()
+{
+    register_post_type(
+        'videos',
+        array(
+            'labels' => array(
+                'name' => __('Videos'),
+                'singular_name' => __('Video'),
+                'all_items' => __('All Videos'),
+                'add_item' => __('Add New'),
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'show_in_rest' => true,
+            'show_in_nav_menus' => false,
+            'supports' => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'custom-fields'),
+            'can_export' => true
+        )
+    );
+}
+
+add_action('init', 'pb_add_video_post_type');
+
 MetaBox::build(array(
     'id' => 'event_extras',
     'name' => 'Extras',
@@ -161,6 +184,27 @@ MetaBox::build(array(
         array(
             'id' => 'featured_video_url',
             'label' => 'Featured video url',
+            'type' => 'url'
+        )
+    )
+));
+
+MetaBox::build(array(
+    'id' => 'video_extras',
+    'name' => 'Extras',
+    'post_type' => 'videos',
+    'fields' => array(
+        array(
+            'id' => 'video_kind',
+            'label' => 'Video kind',
+            'type' => 'select',
+            'options' => array(
+                'youtube' => 'Youtube'
+            )
+        ),
+        array(
+            'id' => 'video_url',
+            'label' => 'Video url',
             'type' => 'url'
         )
     )
