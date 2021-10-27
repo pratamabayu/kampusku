@@ -22,7 +22,16 @@
                 null,
                 array(
                     'heading' => single_cat_title('', false) . ' terkini',
-                    'category_name' => single_cat_title('', false)
+                    'category_name' => single_cat_title('', false),
+                    'numberposts' => '10'
+                )
+            ); ?>
+            <?php get_template_part(
+                'template-parts/section/section-latest-events-as-aside',
+                null,
+                array(
+                    'heading' => 'Agenda terdekat',
+                    'post_type' => 'events'
                 )
             ); ?>
         </aside>

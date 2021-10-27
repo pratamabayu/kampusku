@@ -1,5 +1,6 @@
 <?php
 $starts_on_meta_key = 'event_extras_' . 'starts_on';
+$ends_on_meta_key = 'event_extras_' . 'ends_on';
 $location_meta_key = 'event_extras_' . 'location';
 
 $the_query = new WP_Query(array(
@@ -10,12 +11,19 @@ $the_query = new WP_Query(array(
     'orderby'         => 'meta_value',
     'order'           => 'ASC',
     'meta_query'      => array(
+        'relation' => 'OR',
         array(
             'key'       => $starts_on_meta_key,
             'value'     => date("Ymd"),
             'compare'   => '>=',
             'type'      => 'DATE'
-        )
+        ),
+        array(
+            'key'       => $ends_on_meta_key,
+            'value'     => date("Ymd"),
+            'compare'   => '>=',
+            'type'      => 'DATE'
+        ),
     )
 ));
 ?>

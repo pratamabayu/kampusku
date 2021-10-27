@@ -79,7 +79,16 @@ if (empty($author_name)) {
                 null,
                 array(
                     'heading' => get_the_category()[0]->cat_name . ' terkini',
-                    'category_name' => get_the_category()[0]->cat_name
+                    'category_name' => get_the_category()[0]->cat_name,
+                    'numberposts' => '10'
+                )
+            ); ?>
+            <?php get_template_part(
+                'template-parts/section/section-latest-events-as-aside',
+                null,
+                array(
+                    'heading' => 'Agenda terdekat',
+                    'post_type' => 'events'
                 )
             ); ?>
         </aside>

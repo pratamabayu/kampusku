@@ -36,6 +36,15 @@ $ends_on = strtotime(get_post_field($ends_on_meta_key));
                     'post_type' => 'events'
                 )
             ); ?>
+            <?php get_template_part(
+                'template-parts/section/section-latest-posts-as-aside',
+                null,
+                array(
+                    'heading' => 'Kabar kampus terkini',
+                    'category_name' => 'kabar-kampus',
+                    'numberposts' => '10'
+                )
+            ); ?>
         </aside>
     </section>
 </main>

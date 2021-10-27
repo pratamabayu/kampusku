@@ -1,6 +1,6 @@
 <?php
 $query_args = array(
-    'numberposts' => '5',
+    'numberposts' => isset($args['numberposts']) ? '5' : $args['numberposts'],
     'post_status' => 'publish',
     'category_name' => $args['category_name']
 );
