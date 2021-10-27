@@ -3,6 +3,11 @@
         <section class="column-span-3 column-span-1@m">
             <div><h1><?= the_title(); ?></h1></div>
             <div class="margin-large margin-remove-horizontal margin-remove-top"></div>
+            <figure>
+                <?php if (has_post_thumbnail()) : ?>
+                    <img class="width-1/1 border-radius-2xsmall" src="<?= esc_url(get_the_post_thumbnail_url(null, 'full')) ?>" />
+                <?php endif; ?>
+            </figure>
             <div><?php the_content(); ?></div>
         </section>
         <aside>
