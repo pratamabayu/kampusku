@@ -11,7 +11,7 @@ $posts_query = new WP_Query(array(
 <section class="grid grid-2-columns grid-1-columns@s grid-column-gap-medium grid-column-gap-small@s grid-column-row-small">
     <?php while ($posts_query->have_posts()) : $posts_query->the_post(); ?>
         <section>
-        <a href="<?= esc_url(get_permalink()); ?>" class="margin-medium display-block animation-grow-on-hover" style="--animation-duration: .2s; --animation-delay: .1s; color:inherit">
+        <a href="<?= esc_url(get_permalink()); ?>" class="margin-medium margin-remove-horizontal@s display-block animation-grow-on-hover" style="--animation-duration: .2s; --animation-delay: .1s; color:inherit">
             <div class="card box-shadow-xlarge">
                 <?php if (has_post_thumbnail()) : ?>
                     <div class="background background-cover height-small width-1/1 border-radius-2xsmall border-radius-remove-bottom-left border-radius-remove-bottom-right" style="background-image: url(<?= esc_url(get_the_post_thumbnail_url(null, 'full')) ?>);"></div>

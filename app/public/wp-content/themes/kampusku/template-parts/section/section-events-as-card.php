@@ -16,7 +16,7 @@ $posts_query = new WP_Query(array(
 <section class="grid grid-2-columns grid-1-columns@s grid-column-gap-medium grid-column-row-small">
     <?php while ($posts_query->have_posts()) : $posts_query->the_post(); ?>
         <section>
-            <a href="<?= esc_url(get_permalink()); ?>" class="margin-medium display-block animation-grow-on-hover" style="--animation-duration: .2s; --animation-delay: .1s; color:inherit">
+            <a href="<?= esc_url(get_permalink()); ?>" class="margin-medium margin-remove-horizontal@s display-block animation-grow-on-hover" style="--animation-duration: .2s; --animation-delay: .1s; color:inherit">
                 <div class="card box-shadow-xlarge">
                     <?php
                     $starts_on = strtotime(get_post_field($starts_on_meta_key));
